@@ -29,12 +29,10 @@
                   // Redirect user to index.php
             header("Location: index.php");
                }else{
-        echo "<div class='form'>
-      <h3>Username/password is incorrect.</h3>
-      <br/>Click here to <a href='login.php'>Login</a></div>";
+        echo "<script type='text/javascript'>alert('Username and password are incorrect')</script>";
         }
           }else{
-            echo "<div class='form'><h3>data not found </h3></div>";
+          /*  echo "<div class='form'><h3>data not found </h3></div>";*/
           }
 ?>
 

@@ -42,9 +42,7 @@
             $query = "INSERT into Login (MIS,password,last_login) VALUES('$username', '".md5($password1)."', '$login_date')";
             $result = mysqli_query($con,$query);
             if($result){
-                echo "<div class='form'>
-      <h3>You are registered successfully.</h3>
-      <br/>Click here to <a href='login.php'>Login</a></div>";
+                echo "<script type='text/javascript'>alert('Registration is Successfull')</script>";
             }
         }
 
